@@ -1,0 +1,590 @@
+/* ------------------------------------------------------------------------- */
+
+html {
+  background: #F2E088;
+}
+
+/* ------------------------------------------------------------------------- */
+
+/*
+Esta regla pinta los ENLACES SIN VISITAR de color NARANJA.
+Se recomienda NO usarla y seguir con las convenciones
+(color AZUL por defecto y subrayado de caracteres):
+*/
+a:link {
+  color: orange;
+}
+
+        /* . . . . . . . . . . . */
+
+/*
+Esta regla pinta los enlaces VISITADOS de color ROJO NARANJA.
+Se recomienda NO usarla y seguir con las convenciones
+(color MORADO por defecto):
+*/
+a:visited {
+  color: orangered;
+  
+}
+
+        /* . . . . . . . . . . . */
+
+/*
+Esta regla pinta los ENLACES cuando
+se pasa el cursor del mouse por arriba:
+*/
+a:hover {
+  /*
+  background-color: rgb(255, 214, 255);
+  */
+  background-color: BurlyWood;
+}
+
+        /* . . . . . . . . . . . */
+
+/*
+Esta regla pinta los ENLACES justo antes
+de que pasemos al elemento seleccionado:
+*/
+
+a:active {
+  background-color: rgb(255, 214, 255);
+}
+
+        /* . . . . . . . . . . . */
+
+/*
+Esta regla pinta los ENLACES cuando
+se los selecciona con el TABULADOR (Tab):
+*/
+a:focus {
+  background-color: rgb(255, 214, 255);
+}
+
+/* ------------------------------------------------------------------------- */
+
+body {
+  /* Borde de color en toda la caja principal */
+  border    :  1px solid rgb(255, 0, 0);  /* grosor tipo(sólido) color */
+
+  /* Borde SUPERIOR de color en toda la caja principal */
+  /* border-top: grosor tipo(sólido) color */
+  /*
+  border-top:  5px solid red;
+  */
+
+  padding   :   1%;  /* Relleno o espacio entre el texto y el primer borde  */
+}
+
+/* ------------------------------------------------------------------------- */
+
+h1 {
+  font-family: 'Quando', serif;
+  color      : #F2CE1B;
+  text-shadow: 4px 4px #261901;
+}
+
+h2 {
+  font-size  : 30px;
+  font-family: 'Rufina', serif;
+}
+
+h5 {
+  font-size: 40px;
+}
+
+p {
+  font-family: 'Sintony', sans-serif;
+}
+
+/* ------------------------------------------------------------------------- */
+
+/* ENCABEZAMIENTO (Barra superior fija) */
+header {
+  /* Posicionamiento fijo (se usa para buscador, barras superiores, etc) */
+  position: fixed;
+
+  /*
+  display: grid;
+  */
+
+  /*
+  background: red;
+  */
+  background: #033249;
+
+  /*
+  padding: 1rem 0;
+  */
+
+  /* Dimensiones relativas de la caja del encabezamiento */
+  height: 15%;
+  width : 100%;
+  left  :  0%;
+  right :  0%;
+  top   :  0%;
+  /*
+  top  : 30%;
+  */
+}
+
+/* LOGOTIPO */
+#logo_calabaza {
+  /* Dimensiones de la imagen a lo "alto" */
+  height: 96%;
+
+  /* Dimensiones de la imagen a lo "ancho" */
+  /*
+  width : 10%;
+  */
+
+  /* Imagen flotante ubicada a la izquierda */
+  float: left;
+
+  /* Márgenes en el sentido horario comenzando desde arriba */
+  /* porcentaje relativo al alto */
+  margin-top   : 0.2%; /* 10px; */
+  margin-right : 2.0%; /* 10px; */
+  margin-bottom: 2.0%; /* 10px; */
+  margin-left  : 0.2%; /* 10px; */
+}
+
+/* Fuentes y colores de la lista de vínculos en el encabezado */
+#menu_superior {
+  display: grid;
+
+  font-family: 'Work Sans', sans-serif;
+  font-weight: bold;
+  font-size  : 25px;
+  color      : orange;
+
+  align-items: center;
+  text-align: center;
+  /*
+  background: #033249;
+  */
+
+  /*
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  */
+
+  /*
+  display: inline-block;
+  */
+
+  /*
+  display: block;
+  */
+
+  /*
+  padding: 0.5rem 1rem;
+  */
+}
+
+/* Separador de los elementos de la lista */
+.separador {
+  /*
+  color:blue;
+  */
+  color:white;
+
+  /* Fondo del mismo color que el logotipo */
+  /*
+  background: #856404;
+  */
+}
+
+#menu_superior li {
+  /* Esta propiedad nos permite colocar las listas horizontalmente */
+  /* https://informaticapc.com/tutorial-css/lista-horizontal.php */
+  display         : inline;
+
+  padding-left    : 3%; /* 3px; */
+  padding-right   : 3%; /* 3px; */
+
+  /* Color de fondo para las letras de las opciones
+     (del menú superior de la página) */
+  background: #033249;
+  /*
+  background-color: #033249;
+  background-color: black;
+  */
+}
+
+/* ------------------------------------------------------------------------- */
+
+main {
+  /*  Altura de la imagen fija debajo del encabezado */
+  padding-top: 4%; /* 5rem; */
+}
+
+/* ------------------------------------------------------------------------- */
+
+#titulo_ppal {
+  display: grid;
+
+  /* Imagen de fondo fija */
+  background-image: url("Imagenes/background_image_head.jpg");
+  background-attachment: fixed;
+  /*
+  background-size: cover;
+  */
+  background-size: 100%;
+
+  /*
+  margin: -69px -10px 20px -10px;
+  */
+
+  /* Altura de la imagen fija */
+  height: 350px;
+
+  /*  Fuentes para título y subtítulo: tamaño y centrado */
+  font-size : 30px;
+  text-align: center;
+
+  color: red;
+  /*
+  color: white;
+  */
+  justify-content: center;
+}
+
+.lema{
+  font-family: 'Quando', serif;
+  color: #F2CE1B;
+  text-shadow: 3px 3px #261901;
+}
+
+/* ------------------------------------------------------------------------- */
+
+#quienes_somos {
+  /* Para armar aquí dentro cajas seguidas,
+  una detrás de otra, de izquierda a derecha */
+  display: flex;
+
+  /* Dimensiones relativas de la caja */
+  width: 98%;
+  left :  1%;
+  right:  1%;
+  /*
+  top  :  1%;
+  */
+
+  /*
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  */
+}
+
+.caja_quienes_somos {
+	border :  5px solid OrangeRed;
+	background-color: LightSalmon;
+  /*
+	background-color: #F28F38;
+  */
+
+	height : 100%;
+	width  :  50%;
+	padding: 10px;
+	margin : 10px;
+}
+
+
+#img_quienes_somos {
+  /* Dimensiones relativas de la imagen */
+  height       : 100%;
+  float        : left;
+  margin-top   : 0.25%;
+  margin-right : 3.00%;
+  margin-bottom: 2.00%;
+
+  /*
+  height: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 10px;
+  border-radius: 20px;
+  */
+}
+
+#tit_quienes_somos {
+  text-align: center;
+
+  /*
+  display: grid;
+  grid-template-columns: 65% 35%;
+  border-bottom: 10px double #536FA6;
+  border-top: 10px double #536FA6;
+  border-width: 5px;
+  */
+}
+
+#tex_quienes_somos {
+  font-size  : 20px;
+  font-family: 'Raleway', sans-serif;
+  text-align : justify;
+}
+
+/* ------------------------------------------------------------------------- */
+
+#transicion {
+  /* Para armar aquí dentro cajas seguidas,
+  una detrás de otra, de izquierda a derecha */
+  display: flex;
+
+  /* Dimensiones relativas de la caja */
+  width: 98%;
+  left :  1%;
+  right:  1%;
+  /*
+  top  :  1%;
+  */
+
+  /*
+  display: grid;
+  grid-template-columns: 45% 55%;
+  border-bottom: 10px double #536FA6;
+  border-width: 5px;
+  */
+}
+
+.caja_transicion {
+	border :  5px solid OrangeRed;
+	background-color: LightSalmon;
+  /*
+	background-color: #F28F38;
+  */
+
+	height : 100%;
+	width  :  60%;
+	padding: 10px;
+	margin : 10px;
+}
+
+#img_transicion {
+  /* Dimensiones relativas de la imagen */
+  height       : 95%;
+  float        : right;
+  margin-top   : 0.25%;
+  margin-left  : 3.00%;
+  margin-bottom: 3.00%;
+
+  /*
+  width: 100%;
+  height: 100%;
+  margin: 5px 5px -200px 30px;
+  */
+}
+
+#tit_transicion {
+  text-align: center;
+
+  /*
+  font-size: 30px;
+  font-family: 'Rufina', serif;
+  */
+}
+
+#tex_transicion {
+  font-size  : 20px;
+  font-family: 'Raleway', sans-serif;
+  text-align : justify;
+}
+
+.link_transicion {
+  color: #0D4373;
+  text-decoration: underline;
+}
+
+/* ------------------------------------------------------------------------- */
+
+#empresas {
+  /* Para armar aquí dentro cajas seguidas,
+  una detrás de otra, de izquierda a derecha */
+  display: flex;
+
+  /* Dimensiones relativas de la caja */
+  width: 98%;
+  left :  1%;
+  right:  1%;
+  /*
+  top  :  1%;
+  */
+
+  /*
+  display: grid;
+  grid-template-columns: 40% 60%;
+  border-bottom: 10px double #536FA6;
+  border-width: 5px;
+  */
+}
+
+.caja_empresas {
+	border :  5px solid OrangeRed;
+	background-color: LightSalmon;
+  /*
+	background-color: #F28F38;
+  */
+
+	height : 100%;
+	width  :  70%;
+	padding: 10px;
+	margin : 10px;
+}
+
+#img_empresas {
+  /* Dimensiones relativas de la imagen */
+  height       : 95%;
+  float        : left;
+  margin-top   : 0.25%;
+  margin-right : 3.00%;
+  margin-bottom: 3.00%;
+
+  /*
+  width: 140%;
+  margin-top: 5px;
+  border-radius: 20px;
+  */
+}
+
+#tit_empresas {
+  text-align: center;
+
+  /*
+  font-size: 30px;
+  font-family: 'Rufina', serif;
+  */
+}
+
+#tex_empresas {
+  font-size  : 20px;
+  font-family: 'Raleway', sans-serif;
+  text-align : justify;
+}
+
+.link_empresas {
+  color: #0D4373;
+  text-decoration: underline;
+}
+
+/* ------------------------------------------------------------------------- */
+
+/*
+.logo_schokolade {
+  margin-left: 1%;
+  width: 120px;
+  letter-spacing: 15px;
+  font-size: 1.4em;
+}
+*/
+
+/* ------------------------------------------------------------------------- */
+
+footer {
+  /*
+  background: red;
+  */
+  display: flex;
+  background: #F28F38;
+
+  /* Dimensiones relativas de la caja del encabezamiento */
+  /**/
+  height:  5.0%;
+  width : 98.0%;
+  left  :  0.5%;
+  right :  0.5%;
+  bottom:  0.5%;
+  /**/
+
+  /*
+  padding: 1rem 0;
+  */
+  /*
+  padding: 1%;
+  */
+}
+
+.caja_logo_redes {
+	background-color: LightSalmon;
+  /*
+	background-color: #F28F38;
+  */
+
+	border : 1px solid OrangeRed;
+	height : 50px;
+	width  : 50px;
+	padding: 5px;
+	margin : 10px 10px;
+}
+
+.caja_logo_redes:hover{
+  background-color: red;
+}
+
+.caja_comunicate {
+  /*
+	background-color: SandyBrown;
+	border : 1px solid black;
+  */
+	background-color: #F28F38;
+
+	height : 50px;
+	width  : 350px;
+	padding: 5px;
+	margin : 10px 10px;
+}
+
+#comunicate {
+  font-family: 'Work Sans', sans-serif;
+  font-size  : 1.2em;
+  font-weight: bold;
+  color      : #033249;
+}
+
+.caja_separadora {
+	background-color: Maroon;
+	height : 50px;
+	width  : 5px;
+	
+  /*  Márgenes derecha, izquierda: */
+  margin-right:  10px;
+  margin-left:   20px;
+  /*  Márgenes arriba, abajo: */
+	margin-top   : 10px;
+  /*
+	margin-bottom: 10px;
+  */
+}
+
+.caja_frase_final {
+  /*
+	background-color: SandyBrown;
+	border : 1px solid black;
+  */
+	background-color: #F28F38;
+
+	height : 50px;
+	width  : 300px;
+
+  /*  Márgenes derecha, izquierda: */
+  /*
+  margin-right:  20px;
+  margin-left:   20px;
+  */
+  /*  Márgenes arriba, abajo: */
+	margin-top   : 10px;
+	margin-bottom: 10px;
+}
+
+#frase_final {
+  font-family: 'Work Sans', sans-serif;
+  font-size  : 0.85em;
+  line-height: 0.5em;
+  color      : #033249;
+}
+
+/* ------------------------------------------------------------------------- */
