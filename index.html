@@ -1,38 +1,310 @@
-<html>
+<!DOCTYPE html>
+<html lang="es-AR" dir="ltr">
+<!-- ZOE IBARRA - ILSE - 2do. 6ta. año 2020 -->
 
   <head>
-    <meta charset="utf-8">
-    <title> Zoe Ibarra Gómez </title>
+    <meta charset="UTF-8">
+    <title>~ Happy Vegan ~</title>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - -
+    |
+    | VALIDACIÓN de  PÁGINA
+    | - - - - - - - - - - -
+    |
+    |   Para validar el código ir a la página:
+    |
+    |     http://validator.w3.org
+    |
+    |   en la solapa:
+    |
+    |     'Validate by Direct Input'
+    |
+    |   o link:
+    |
+    |     https://validator.w3.org/#validate_by_input
+    |
+    |   Poner allí todo el contenido de este archivo,
+    |   colocando las reglas del 'archivo de estilos'
+    |   entre las siguientes marcas o etiquetas "style".
+    |
+    |   Luego de eso, pulsar el botón 'Check'.
+    |
+    |   Allí aparecerán los errores de código.
+    |
+    - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <style>
+      /*
+      Colocar aquí el código del archivo de estilos
+      (en este caso es el archivo "estilo.css").
+      */
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Enlace al archivo de estilos -->
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+    <!-- FUENTES -->  
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rufina&display=swap"    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sintony&display=swap"   rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quando&display=swap"    rel="stylesheet">
+
   </head>
+
+  <!--***************************************************************************************************************-->
+  <!--***************************************************************************************************************-->
 
   <body>
 
-    <h1> Título Principalísimo 1 </h1>
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-    <h2> Introducción </h2>
+    <header>
+      <img id="logo_calabaza" alt="Logo de la Calabaza" src="Imagenes/Logotipo.png">
 
-    <p>
-      Párrafo 1:
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation
-        ullamco laboris nisi ut aliquid ex ea commodi consequat.
-        Quis aute iure reprehenderit in voluptate velit
-        esse cillum dolore eu fugiat nulla pariatur.
-        Excepteur sint obcaecat cupiditat non proident,
-        sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
+      <!-- Vínculos internos y externos en HTML -->
+      <div id="menu_superior">
+        <nav>
+          <ul>
 
-    <h2>
-      Subtítulo 1
-    </h2>
+            <li> <!-- link interno -->
+              <span class="separador"></span>
+              <a href="#">
+              INICIO </a>
+            </li>
 
-    <p>
-      Párrafo 1: <br>
-      Línea 1 <br>
-      Línea 2 <br>
-      Línea 3
-    </p>
+            <li> <!-- link externo -->
+              <span class="separador"></span>
+              <a target="_blank" href="https://recetasveganas.net">
+              RECETAS Y LIBROS </a>
+            </li>
+
+            <li> <!-- link externo -->
+              <span class="separador"></span>
+              <a target="_blank" href="https://forovegano.com">
+              INTERACTUÁ Y DIFUNDÍ </a>
+            </li>
+
+            <li>
+              <span class="separador"></span>
+              <a href="#lema">
+              NOSOTROS </a>
+            </li> <!-- link interno -->
+
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <main>
+
+      <div id="titulo_ppal">
+        <h1>Happy Vegan</h1>
+        <p class="lema" id="lema">
+          Unidos por el cambio
+        </p>
+      </div>
+
+      <!--   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  -->
+
+      <div id="quienes_somos">
+
+        <span class="caja_quienes_somos">
+          <img class="img_quienes_somos" src="Imagenes/Comunidad.png" alt="Imagen comunidad">
+        </span>
+
+        <div class="caja_quienes_somos">
+          <h2 id="tit_quienes_somos">
+            ¿QUIÉNES SOMOS?
+          </h2>
+
+          <p class="parrafo">
+            Somos una verdadera comunidad, la cual creó este sitio para todas esas personas
+            que estén interesadas en cambiar su alimentación o en continuar con una
+            muy saludable, sin tener que perjudicar o lastimar a ningún animal.
+          </p>
+
+          <p class="parrafo">
+            En este espacio vas a poder aprender, ayudar, opinar y compartir
+            tus experiencias libremente y mucho más.
+            Esperamos que sea de tu agrado, la pases bien y te sientas cómodo/a.
+          </p>
+        </div>
+
+      </div>
+
+      <!--   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  -->
+
+      <div id="transicion">
+
+        <span class="caja_transicion">
+          <img class="img_transicion" src="Imagenes/transicion_Watson.jpg" alt="Imagen transicion">
+        </span>
+
+        <div class="caja_transicion">
+          <h2 id=tit_transicion>
+            TRANSICIÓN AL VEGANISMO
+          </h2>
+
+          <p class="parrafo">
+            El origen del concepto
+            <span style="color: Maroon; font-style: italic; font-weight: bold">
+            veganismo</span>,
+            su nombre y su posterior reconocimiento,
+            comenzaron en la década de los 40' gracias
+            a la labor de <em>Donald Watson</em> y amigos.
+            Pero también tenemos evidencias, desde hace más de 2000 años,
+            de que grandes genios muy probablemente fueron veganos:
+            Pitágoras, Albert Einstein,
+            Nikola Tesla, Leonardo Da Vinci y muchos más.
+            En 1944 Watson, su esposa y otros compañeros
+            estaban pensando en una palabra que definiera a los
+            <a target="_blank" class="link_transicion"
+            href="https://unionvegetariana.org/dietas-vegetarianas-postura-de-la-ada/">
+            ovolactovegetarianos</a>,
+            cuando surgió entre ellos la palabra
+            <span style="color: Maroon; font-style: italic; font-weight: bold">
+            vegan</span>,
+            extraida del vocablo <em>vegetarian</em>.
+          </p>
+
+          <p class="parrafo">
+            Actualmente, cada 1ro. de noviembre se celebra
+            el <em>Día Mundial del Veganismo</em>, pues ese mismo día
+            de 1944 se publicó el primer número de
+            <em>‘The Vegan News’</em> y Donald Watson junto con Elsie Shrigley fundaron
+            junto a sus compañeros
+            <a target="_blank" class="link_transicion"
+            href="https://www.vegansociety.com/">The Vegan Society</a>,
+            con algunas docenas de miembros iniciales entre sus filas.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!--   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -  -->
+
+      <div id="empresas">
+
+        <span class="caja_empresas">
+          <img class="img_empresas" src="Imagenes/Dietetica_vegan.jpg" alt="Dietetica vegana">
+        </span>
+
+        <div class="caja_empresas">
+          <h2 id="tit_empresas">
+            EMPRESAS VEGANAS
+          </h2>
+
+          <p>
+            Empresas veganas argentinas o con sucursales dentro de Argentina:
+          </p>
+          <ul>
+            <li><a target="_blank" class="link_empresas" href="https://notco.com/ar/">Not Co</a></li>
+            <li><a target="_blank" class="link_empresas" href="https://unrinconvegano.com.ar/">Un rincón Vegano</a></li>
+            <li><a target="_blank" class="link_empresas" href="https://feliceslasvacas.com/">Felices las Vacas</a></li>
+            <li><a target="_blank" class="link_empresas" href="http://www.unionvegana.org/">Union Vegana</a></li>
+            <li><a target="_blank" class="link_empresas" href="http://www.green-factory.com.ar/">Green Factory</a></li>
+            <li><a target="_blank" class="link_empresas" href="https://www.beyondmeat.com/">Beyond Meat</a></li>
+            <li><a target="_blank" class="link_empresas" href="https://impossiblefoods.com/">Impossible Foods</a></li>
+            <li><a target="_blank" class="link_empresas" href="https://www.kelloggs.com.ar/">Kellogg's</a></li>
+          </ul>
+
+          <p>
+            Empresas veganas argentinas o con sucursales que tienen <strong>productos</strong> veganos:
+          </p>
+          <ul>
+            <li><a target="_blank" class="link_empresas" href="https://www.oreo.com/">Oreo</a></li>
+            <li><a target="_blank" class="link_empresas" href="https://www.hellmanns.com/">Hellmann's</a></li>
+            <li><a target="_blank" class="link_empresas" href="http://www.cachafaz.com/">Cachafaz</a></li>
+            <li><a target="_blank" class="link_empresas" href="https://www.nestle.com/">Nestlé</a></li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </main>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+    <footer>
+
+      <span class="caja_logo_redes">
+        <!--
+        https://i.ibb.co/n3zJ0L9/Facebook.png
+        <img src="Imagenes/Facebook_original.png" class="imgredes" alt="Facebook original">
+        <img src="Imagenes/Facebook_negro_50px_x_50px.png" class="imgredes" alt="Facebook">
+       -->
+        <a target="_blank"
+           href="https://www.facebook.com">
+           <img src="Imagenes/Facebook_negro_50px_x_50px.png"
+                   class="imgredes"
+                   alt="Facebook">
+        </a>
+      </span>
+
+      <span class="caja_logo_redes">
+        <!--
+        https://i.ibb.co/F8Ln755/Twitter.png
+        <img src="Imagenes/Twitter_original.png" class="imgredes" alt="Twitter original">
+        <img src="Imagenes/Twitter_negro_50px_x_50px.png" class="imgredes" alt="Twitter">
+       -->
+        <a target="_blank"
+           href="https://twitter.com/?lang=es">
+           <img src="Imagenes/Twitter_negro_50px_x_50px.png"
+                   class="imgredes"
+                   alt="Twitter">
+        </a>
+      </span>
+
+      <span class="caja_logo_redes">
+        <!--
+        https://i.ibb.co/FVcSrHd/Instagram.png
+        <img src="Imagenes/Instagram_original.png" class="imgredes" alt="Instagram original">
+        <img src="Imagenes/Instagram_negro_50px_x_50px.png" class="imgredes" alt="Instagram">
+        -->
+        <a target="_blank"
+           href="https://www.instagram.com">
+           <img src="Imagenes/Instagram_negro_50px_x_50px.png"
+                   class="imgredes"
+                   alt="Instagram">
+        </a>
+      </span>
+
+      <div class="caja_comunicate">
+        <div id="comunicate">
+          <p>
+            ¡ Comunicate con nosotros !
+          </p>
+        </div>
+      </div>
+
+      <span class="caja_separadora">
+      </span>
+
+      <div class="caja_frase_final">
+        <div id="frase_final">
+          <p>
+            Todos los derechos reservados.
+          </p>
+          <p>
+            Diseño de página:
+            <em>
+              <span style="color: Maroon; font-style: italic; font-weight: bold">
+                Zoe Ibarra Gómez
+              </span> 
+            </em>.
+          </p>
+        </div>
+      </div>
+
+    </footer>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
   </body>
 
