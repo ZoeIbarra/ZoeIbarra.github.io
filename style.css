@@ -226,7 +226,7 @@ main {
   display: grid;
 
   /* Imagen de fondo fija */
-  background-image: url("Imagenes/background_image_head.jpg");
+  background-image: url("background_image_head.jpg");
   background-attachment: fixed;
   /*
   background-size: cover;
